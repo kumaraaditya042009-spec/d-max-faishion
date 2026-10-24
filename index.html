@@ -117,7 +117,7 @@ document.getElementById("total").textContent="Total: ₹"+cart.reduce((s,p)=>s+p
 function removeItem(i){cart.splice(i,1);renderCart();}
 function whatsappOrder(){
 if(!cart.length){alert("Please add a product first.");return;}
-const phone=prompt("Enter store WhatsApp number with country code, digits only (India: 91XXXXXXXXXX):");
+const phone=prompt("Enter store WhatsApp number with country code, digits only (India: 917004670159):");
 if(!phone||!/^\d{10,15}$/.test(phone)){alert("Please enter a valid WhatsApp number.");return;}
 const name=document.getElementById("customer").value.trim();
 const address=document.getElementById("address").value.trim();
